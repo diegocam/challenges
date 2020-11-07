@@ -2,6 +2,7 @@
 
 require 'vendor/autoload.php';
 
+use App\Birds\Chicken;
 use App\Filesystem\FileSystem;
 
 /******** QUESTION 1 ********/
@@ -13,15 +14,14 @@ $f->addFile('fileB.txt', 'directoryB');
 $f->addFile('fileC.txt', 'directoryB');
 $f->addDirectory('directoryC', 'directoryB');
 $f->addFile('fileD.jpg', 'directoryC');
-echo implode(', ', $f->getItems('directoryA'));
+dump(implode(', ', $f->getItems('directoryA')));
 $f->deleteSubdirectory('directoryB');
 $f->deleteFile('directoryA', 'fileA.jpg');
 
 
 /******** QUESTION 2 ********/
-/*
-Bird -> chickens
-Birds lay eggs -> new Egg
-EggTypes -> ChickenEgg, turkeyEgg
-Egg -> hatch() -> new BirdType
-*/
+$chicken = new Chicken();
+$egg = $chicken->layEgg();
+dump($egg);
+$bird = $egg->hatch();
+dump($bird);
