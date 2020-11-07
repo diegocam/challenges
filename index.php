@@ -6,7 +6,7 @@ use App\Birds\Chicken;
 use App\Filesystem\FileSystem;
 
 /******** QUESTION 1 ********/
-dump('QUESTION 1:');
+dump('ANSWER TO QUESTION 1:');
 $f = new FileSystem();
 $f->addDirectory('directoryA', null);
 $f->addFile('fileA.jpg', 'directoryA');
@@ -21,7 +21,7 @@ $f->deleteFile('directoryA', 'fileA.jpg');
 dump('-----------------------------------');
 
 /******** QUESTION 2 ********/
-dump('QUESTION 2:');
+dump('ANSWER TO QUESTION 2:');
 $chicken = new Chicken();
 $egg = $chicken->layEgg();
 dump($egg);
@@ -30,7 +30,7 @@ dump($bird);
 dump('-----------------------------------');
 
 /******** QUESTION 3 ********/
-dump('QUESTION 3:');
+dump('ANSWER TO QUESTION 3:');
 function shiftLetters(string $str, array $shifts)
 {
     $strArr = str_split($str);
@@ -60,6 +60,6 @@ dump('-----------------------------------');
 
 
 /******** QUESTION 4 ********/
-dump('QUESTION 4:');
+dump('ANSWER TO QUESTION 4:');
 $sql = file_get_contents("db_query.sql");
 dump($sql);
