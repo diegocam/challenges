@@ -1,6 +1,6 @@
 # Assessment
 
-By running this app you will find the answers to the questions found in questions.md.
+By running this app you will find the answers to the questions found in [questions.md](https://github.com/diegocam/challenges/blob/main/questions.md).
 
 ### Tools
 You will need:
