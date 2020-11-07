@@ -1,6 +1,6 @@
 {
-    "name": "diego/filesystem",
-    "description": "ButcherBox FileSystem",
+    "name": "diego/challenges",
+    "description": "Challenges",
     "authors": [
         {
             "name": "Diego Camacho",
