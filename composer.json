@@ -1,0 +1,19 @@
+{
+    "name": "diego/filesystem",
+    "description": "ButcherBox FileSystem",
+    "authors": [
+        {
+            "name": "Diego Camacho",
+            "email": "camachojcd@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "App\\": "app/"
+      }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    }
+}
